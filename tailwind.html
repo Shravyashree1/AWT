@@ -3,57 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind CSS Web Page</title>
+  <title>Karnataka Tourist Places</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
   <!-- Header -->
-  <header class="bg-blue-600 text-white p-6 shadow-md">
+  <header class="bg-green-600 text-white p-6 shadow-lg">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-3xl font-bold">My Web Page</h1>
+      <h1 class="text-3xl font-bold">Karnataka Tourist Places</h1>
       <nav>
         <ul class="flex space-x-4">
           <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#" class="hover:underline">About</a></li>
-          <li><a href="#" class="hover:underline">Services</a></li>
-          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#attractions" class="hover:underline">Attractions</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-gray-200 py-16">
+  <section class="bg-white py-12">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-semibold mb-4">Welcome to Our Website</h2>
-      <p class="text-lg text-gray-700 mb-6">Building responsive and beautiful designs with Tailwind CSS</p>
-      <a href="#" class="bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700">Get Started</a>
+      <h2 class="text-4xl font-semibold text-gray-800 mb-4">Explore the Beauty of Karnataka</h2>
+      <p class="text-gray-600 mb-6">From the serene beaches of Gokarna to the majestic Mysore Palace, Karnataka has something for everyone!</p>
+      <a href="#attractions" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700">Discover More</a>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="py-16">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded shadow">
-        <h3 class="text-xl font-bold mb-4">Feature 1</h3>
-        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="bg-white p-6 rounded shadow">
-        <h3 class="text-xl font-bold mb-4">Feature 2</h3>
-        <p class="text-gray-600">Suspendisse potenti. In non urna elit.</p>
-      </div>
-      <div class="bg-white p-6 rounded shadow">
-        <h3 class="text-xl font-bold mb-4">Feature 3</h3>
-        <p class="text-gray-600">Aenean malesuada felis at justo egestas.</p>
+  <!-- Attractions Section -->
+  <section id="attractions" class="bg-gray-100 py-12">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Top Attractions</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Attraction 1 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <img src="C:\Users\asus\Downloads\mysore.jpg" alt="Mysore Palace" class="rounded-md mb-4">
+          <h4 class="text-2xl font-bold text-gray-800 mb-2">Mysore Palace</h4>
+          <p class="text-gray-600">A stunning royal residence showcasing Indo-Saracenic architecture.</p>
+        </div>
+        <!-- Attraction 2 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <img src="C:\Users\asus\Downloads\coorg.jpg" alt="Coorg" class="rounded-md mb-4">
+          <h4 class="text-2xl font-bold text-gray-800 mb-2">Coorg</h4>
+          <p class="text-gray-600">Known as the "Scotland of India," Coorg is famous for its coffee plantations and scenic beauty.</p>
+        </div>
+        <!-- Attraction 3 -->
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <img src="C:\Users\asus\Downloads\Hampi.jpg" alt="Hampi" class="rounded-md mb-4">
+          <h4 class="text-2xl font-bold text-gray-800 mb-2">Hampi</h4>
+          <p class="text-gray-600">A UNESCO World Heritage Site known for its ancient temples and ruins.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-600 text-white py-6">
+  <footer id="contact" class="bg-green-600 text-white py-6">
     <div class="container mx-auto text-center">
-      <p>&copy; 2025 My Web Page. All rights reserved.</p>
+      <h4 class="text-2xl font-semibold mb-2">Contact Us</h4>
+      <p>Email: <a href="mailto:info@karnatakatourism.com" class="underline">info@karnatakatourism.com</a></p>
+      <p>Phone: +91 9876543210</p>
+      <p>&copy; 2025 Karnataka Tourism. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
